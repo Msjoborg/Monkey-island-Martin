@@ -738,7 +738,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, 
             . . . f f f f f f f . . . . . . 
             `, SpriteKind.Enemy)
         tiles.placeOnRandomTile(myEnemy, assets.tile`transparency16`)
-        myEnemy.follow(mySprite, 75)
+        myEnemy.follow(mySprite, 30)
         pause(100)
         animation.runImageAnimation(
         myEnemy,
