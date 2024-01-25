@@ -1,0 +1,38 @@
+{
+    "name": "Monkey island (rätt) #2",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll/",
+        "pxt-tilemaps": "github:microsoft/pxt-tilemaps/",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "multiplayer": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts",
+        "pxt.json",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.12.21",
+        "tag": "v1.12.21",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/0cb2da5a909e7062f4a7611a9c2d9f35446a3657",
+        "target": "1.12.46",
+        "pxt": "8.5.29",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
