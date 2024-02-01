@@ -20,7 +20,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
     info.changeScoreBy(10)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`chest2`, function (sprite3, location3) {
-    tiles.setCurrentTilemap(tilemap`level21`)
+    tiles.setCurrentTilemap(tilemap`level37`)
     tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 18))
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -737,8 +737,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, 
             . . f b b b b b b c f . . . . . 
             . . . f f f f f f f . . . . . . 
             `, SpriteKind.Enemy)
-        tiles.placeOnRandomTile(myEnemy, assets.tile`transparency16`)
-        myEnemy.follow(mySprite, 30)
+        tiles.placeOnRandomTile(myEnemy, assets.tile`myTile37`)
+        myEnemy.follow(mySprite, 51)
         pause(100)
         animation.runImageAnimation(
         myEnemy,
@@ -1397,8 +1397,8 @@ scene.setBackgroundImage(img`
     `)
 tiles.setCurrentTilemap(tilemap`level31`)
 mySprite = sprites.create(assets.image`högerapa`, SpriteKind.Player)
-controller.moveSprite(mySprite, 100, 0)
-mySprite.ay = 500
+controller.moveSprite(mySprite, 9999, 0)
+mySprite.ay = 100
 scene.cameraFollowSprite(mySprite)
 game.onUpdateInterval(2000, function () {
     if (bossFight == 1) {
@@ -1722,7 +1722,7 @@ game.onUpdateInterval(2000, function () {
                 . . . . c c c b b a c c . . . . 
                 . . . . . c c c c c c . . . . . 
                 `, boss, -20, 0)
-            bossProjectile.ay = 20
+            bossProjectile.ay = 40
             myEnemy.follow(mySprite)
             animation.runImageAnimation(
             boss,
